@@ -1,0 +1,67 @@
+body {
+	font-family: 'Lato', Helvetica, sans-serif;
+	font-weight: 400;
+	text-align: center;
+}
+
+.title {
+	padding: 2rem;
+}
+
+.main {
+	padding: 2rem;
+}
+
+footer {
+	padding: 2rem;
+}
+
+h1 {
+	font-size: 8em;
+	font-weight: 100;
+	line-height: 1.2em;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: 300;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 1.5em;
+	margin-bottom: 1em;
+}
+
+header {
+	background-color: #DB5;
+	text-align: center;
+	padding: .5rem;
+	color: #fff;
+}
+
+.main p {
+	font-weight: 300;
+	font-size: 1.2em;
+	margin-bottom: 1em;
+}
+
+.main a {
+	font-weight: 400;
+}
+
+.button {
+	background-color: #737;
+	color: #fff;
+	padding: .2em .4em;
+	border-radius: .2em;
+	text-decoration: none;
+}
+
+.button:hover {
+	background-color: #76A;
+}
+
+.caption {
+	font-size: .75em;
+}
