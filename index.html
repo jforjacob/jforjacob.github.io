@@ -39,7 +39,7 @@
 					var random = Math.floor( Math.random() * results.rows.length );
 					var msg = "<strong>" + results.rows.item(random).title + "</strong>, a " + results.rows.item(random).medium + " by " + results.rows.item(random).author + "<br/>"
 					+ "<small>mentioned in <strong>" + results.rows.item(random).source_title + "</strong> by " + results.rows.item(random).source_author + "</small>";
-					document.querySelector('#random-work').innerHTML +=  msg;
+					document.querySelector('#sample-work').innerHTML +=  msg;
 				}, null);
 		 });
 
