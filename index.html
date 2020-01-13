@@ -6,79 +6,50 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="styles/styles.css" />
 	<script type="text/javascript">
-
-		 var db = openDatabase('minipseudobibliography', '1.0', 'Sample DB', 2 * 1024 * 1024);
-
-		 db.transaction(function (tx) {
-				tx.executeSql('CREATE TABLE IF NOT EXISTS Works (id unique, title, author, medium, source_title, source_author)');
-				tx.executeSql('INSERT INTO Works (id, title, medium, author, source_title, source_author) VALUES (1, "Chicken Spirits", "collection of poetry", "Martha Sewell", "Emotionally Weird", "Kate Atkinson")');
-				tx.executeSql('INSERT INTO Works (id, title, medium, author, source_title, source_author) VALUES (2, "The Blind Assassin", "book", "Laura Chase", "The Blind Assassin", "Margaret Atwood")');
-				tx.executeSql('INSERT INTO Works (id, title, medium, author, source_title, source_author) VALUES (3, "Cloud Formations and Other Phenomena", "book", "Isaac Izard", "The House with a Clock in Its Walls", "John Bellairs")');
-				tx.executeSql('INSERT INTO Works (id, title, medium, author, source_title, source_author) VALUES (4, "The Berlin Underworld", "book", "Benno von Archimboldi", "2666", "Roberto Bola&#241;o")');
-				tx.executeSql('INSERT INTO Works (id, title, medium, author, source_title, source_author) VALUES (5, "History of a Land called Uqbar", "book", "Silas Haslam", "Tl&#246;n, Uqbar, Orbis Tertius", "Jorge Luis Borges")');
-				tx.executeSql('INSERT INTO Works (id, title, medium, author, source_title, source_author) VALUES (6, "It\'s the Queen of Darkness, Pal", "book", "Rod Keen", "The Abortion: An Historical Romance 1966", "Richard Brautigan")');
-				tx.executeSql('INSERT INTO Works (id, title, medium, author, source_title, source_author) VALUES (7, "The Leader of the Lost Cause", "book", "Josephine M. Bettany", "The Mystery at the Chalet School", "Elinor Brent-Dyer")');
-				tx.executeSql('INSERT INTO Works (id, title, medium, author, source_title, source_author) VALUES (8, "Reliques of Vystrani Wisdom", "book", "David Parnell", "A Natural History of Dragons: A Memoir by Lady Trent", "Marie Brennan")');
-				tx.executeSql('INSERT INTO Works (id, title, medium, author, source_title, source_author) VALUES (9, "The Clothes Unmake the Emperor", "book", "Baron Vile", "Five Hundred Years After", "Steven Brust")');
-				tx.executeSql('INSERT INTO Works (id, title, medium, author, source_title, source_author) VALUES (10, "Tom Underground", "play", "Olive Wellwood", "The Children\'s Book", "A. S. Byatt")');
-				tx.executeSql('INSERT INTO Works (id, title, medium, author, source_title, source_author) VALUES (11, "The Rising Sun", "book", "Robert Louis Stevenson", "Biography of the Life of Manuel", "James Branch Cabell")');
-				tx.executeSql('INSERT INTO Works (id, title, medium, author, source_title, source_author) VALUES (12, "In a Network of Lines that Intersect", "book", "Ermes Marana", "If on a Winter\'s Night a Traveler", "Italo Calvino")');
-				tx.executeSql('INSERT INTO Works (id, title, medium, author, source_title, source_author) VALUES (13, "Eight Solid Light-years of Lead", "book", "John Jose Fahey", "Wonder Boys", "Michael Chabon")');
-				tx.executeSql('INSERT INTO Works (id, title, medium, author, source_title, source_author) VALUES (14, "The King in Yellow", "book", "Castaigne", "The King in Yellow", "Robert W. Chambers")');
-				tx.executeSql('INSERT INTO Works (id, title, medium, author, source_title, source_author) VALUES (15, "Twenty Inches of Monkey", "book", "Aaron Klopstein", "a letter to Hamish Hamilton", "Raymond Chandler")');
-				tx.executeSql('INSERT INTO Works (id, title, medium, author, source_title, source_author) VALUES (16, "A Defence of my Deeds Written while Wrongly Imprisoned by my Enemies in Newark Castle", "book", "Peter Watershippe", "Jonathan Strange & Mr. Norrell", "Susanna Clarke")');
-				tx.executeSql('INSERT INTO Works (id, title, medium, author, source_title, source_author) VALUES (17, "Plinths! Plinths! Plinths!", "book", "Revd. J. W. Pottage", "What a Carve Up!", "Jonathan Coe")');
-				tx.executeSql('INSERT INTO Works (id, title, medium, author, source_title, source_author) VALUES (18, "The True History of the Boy", "book", "St. Francis", "A Tapestry of Time", "Richard Cowper")');
-				tx.executeSql('INSERT INTO Works (id, title, medium, author, source_title, source_author) VALUES (19, "The Angel Returns", "book", "Heinrich Behring", "Mobius Dick", "Andrew Crumey")');
-				tx.executeSql('INSERT INTO Works (id, title, medium, author, source_title, source_author) VALUES (20, "Where God Went Wrong", "book", "Oolon Colluphid", "The Hitchhiker\'s Guide to the Galaxy series", "Douglas Adams")');
-				tx.executeSql('INSERT INTO Works (id, title, medium, author, source_title, source_author) VALUES (21, "The Peculiar Neurodegenerative Inhabitants of the Kazawa Atoll", "book", "Raleigh St. Clair", "The Royal Tenenbaums", "Wes Anderson")');
-		 });
-
-		 db.transaction(function (tx) {
-				tx.executeSql('SELECT * FROM Works', [], function (tx, results) {
-					var random = Math.floor( Math.random() * results.rows.length );
-					var msg = "<strong>" + results.rows.item(random).title + "</strong>, a " + results.rows.item(random).medium + " by " + results.rows.item(random).author + "<br/>"
-					+ "<small>mentioned in <strong>" + results.rows.item(random).source_title + "</strong> by " + results.rows.item(random).source_author + "</small>";
-					document.querySelector('#sample-work').innerHTML +=  msg;
-				}, null);
-		 });
-
-	</script>
+  
+  </script>
 </head>
 <body>
 	<header class="title">
-		<h1>Hello.</h1>
-		<h2>My name is Jacob Shemkovitz.</h2>
-		<h3>
-			I'm a full stack developer with experience in modern <strong>JavaScript</strong>/HTML/CSS, <strong>Node.js</strong>,
-			<strong>Ruby on Rails</strong>, <strong>PostgreSQL</strong>, and <strong>React.js</strong>.
-		</h3>
+    <div>A short page about</div>
+		<h1>Jacob Shemkovitz</h1>
+		<h3>ServiceNow Platform Developer</h3>
+    <div>Pre-sales solution innovation, portal & app prototyping.</div>
+    <div><strong>JavaScript</strong></div>
+    <div>Also <strong>Node.js</strong>, <strong>React</strong>, <strong>Ruby on Rails</strong></div>
 	</header>
 	<div class="main">
 
 		<p>
-			<a class="contact button" href="https://github.com/jforjacob">Github!</a>
-			<a class="contact button" href="https://www.linkedin.com/in/shemko">LinkedIn!</a>
-			<a class="contact button" href="mailto:jacob.shemkovitz@gmail.com">Email!</a>
+			<a class="contact button" href="https://github.com/jforjacob">Github</a>
+			<a class="contact button" href="https://www.linkedin.com/in/shemko">LinkedIn</a>
+			<a class="contact button" href="mailto:jacob.shemkovitz@gmail.com">Email</a>
 		</p>
 
-		<h3>Projects:</h3>
+    <h3>Recent Projects:</h3>
+    <p>[Placeholder...]</p>
+
+    <h3>Old Projects:</h3>
+    <!--
 		<div class="section-wrapper">
 			<p><a href="https://pseudobibliography.herokuapp.com" title="Note: Currently hosted on Heroku, which may need a few seconds to wake up." class="button">Pseudobibliography</a> is a directory and API of imaginary books, on Rails with PostgreSQL. <strong>Example:</strong></p>
 				<h3 id="sample-work">
 				</h3>
 		</div>
-
+    
 		<p><a href="http://www.notablecinema.com" class="button">Notable Cinema</a> is a film-sharing site written in Node/Express with React and MongoDB.</p>
 		<p><a href="http://exquisite-graveyard.herokuapp.com" class="button">Exquisite Graveyard</a> is parlor-game-inspired collaborative storytelling forum written in Ruby on Rails with PostgreSQL.</p>
 		<p><a href="http://blinkedin-profile.herokuapp.com/" class="button">BlinkedIn</a> is a getting-hired site, written in Ruby on Rails with PostgreSQL, made with a team.</p>
 		<p><a href="/tic-tac-toe" class="button">Ye Olde Tic-Tac-Toe</a> is a JavaScript/jQuery implementation of the old game of Naughts and Crosses.</p>
-
-		<h3>Small Victories:</h3>
+    -->
+    <h3>Small Victories:</h3>
+    <!--
 		<p>
 			<a href="http://snoosic.herokuapp.com" class="button">Snoosic</a> creates Spotify playlists from music subreddits. MEAN stack with a team.<br/>
 			General Assembly Hack-a-thon winner November 2015, Most Complete.
-		</p>
+    </p>
+    -->
+    
 		<h3>Also:</h3>
 		<p>Here are some things I like: <a class="button" href="http://jforjacob.tumblr.com">Tumblr</a></p>
 
