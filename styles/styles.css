@@ -1,62 +1,115 @@
+/* #FEC #DB5 #78D #737 */
+
+.pad {
+  padding: 2rem 0 1rem;
+}
+.pad > * {
+  margin: 0 2rem 1rem;
+}
+
 body {
-	font-family: 'Lato', Helvetica, sans-serif;
-	font-weight: 400;
-	line-height: 1.7em;
-	text-align: center;
+  font-family: 'Lato', Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: #78D;
+}
+.container {
+  margin: 2em 1em;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.profile-info {
+  margin: 0 1em;
+  background-color: #fff;
+  width: 400px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.profile-img {
+  background-image: url('/assets/me.jpg');
+  margin: 0 1em 1em;
+  width: 400px;
+  border-radius: 1rem;
+  height: 400px;
+  background-size: cover;
+  background-position: center top;
 }
 
-.notice {
-	background-color: #DB5;
-	text-align: center;
-	padding: .5rem;
-	color: #fff;
+header {
+  background-color: #737;
+  color: #fff;
 }
-
-.title {
-	padding: 2rem;
-	width: 100%;
-	max-width: 900px;
-	margin: 0 auto;
-	box-sizing: border-box;
+main {
+  font-size: 1.2em;
 }
-
-.main {
-	padding: 2rem;
-
-	max-width: 900px;
-	margin: 0 auto;
-}
-
-.footer {
-	padding: 2rem;
-}
-
-h1 {
-	font-size: 8em;
-	font-weight: 100;
-	line-height: 1.5em;
-}
-
-h2 {
-	font-size: 2em;
+h1 .name {
+	font-size: 2.2em;
 	font-weight: 300;
+  line-height: 1.2em;
+  min-width: 300px;
+}
+h1 .who-dat {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
-h3 {
-	font-weight: 400;
-	font-size: 1.5em;
-	margin-top: 1em;
-	margin-bottom: .5em;
+.big {
+  font-size: 1.2em;
 }
 
-.main p {
-	font-weight: 300;
-	font-size: 1.2em;
-	margin-bottom: .7em;
+blockquote {
+  font-size: 1.5em;
+  font-weight: 300;
+  position: relative;
+  display: inline-block;
+  left: 1.5rem;
+  font-style: italic;
+}
+blockquote::before, blockquote::after {
+  position: absolute;
+  color: #78D;
+  opacity: 50%;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 400;
+  top: -1.5rem;
+}
+blockquote::before {
+  content: '\201c';
+  left: -2rem;
+}
+blockquote::after {
+  content: '\201d';
+  right: -2rem;
 }
 
-.main a {
-	font-weight: 400;
+.inline-block {
+  display: inline-block;
+}
+/*
+.profile-img:hover {
+  background-im: url('/assets/internet.png');
+}
+*/
+
+footer {
+  background-color: #FEC;
+}
+
+.well {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: .5rem;
+  color: #000;
+}
+
+.inline-logo {
+  border-radius: 0;
+  height: 1em;
+  margin-right: .3em;
 }
 
 .button {
@@ -66,6 +119,9 @@ h3 {
 	border-radius: .2em;
 	text-decoration: none;
 	margin: 0 .2em;
+}
+.button:first-child {
+  margin-left: 0;
 }
 
 .button.contact {
@@ -79,19 +135,4 @@ h3 {
 
 caption, small {
 	font-size: .75em;
-}
-
-#sample-work {
-	font-weight: 300;
-}
-
-strong {
-	font-weight: 400;
-}
-
-.section-wrapper {
-	background-color: #FEC;
-	border-radius: 10px;
-	padding: 1em;
-	margin-bottom: 1em;
 }
