@@ -1,62 +1,66 @@
-/* #FEC #DB5 #78D #737 */
-
-.pad {
-  padding: 2rem 0 1rem;
-}
-.pad > * {
-  margin: 0 2rem 1rem;
-}
+/* #FEC #DB5 #78D #737 #BAD*/
 
 body {
   font-family: 'Lato', Helvetica, sans-serif;
   line-height: 1.5;
-  background-color: #78D;
+  background-color: #BAD;
 }
 .container {
-  margin: 2em 1em;
+  margin: 2em 1rem;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
 }
-.profile-info {
-  margin: 0 1em;
-  background-color: #fff;
+.container > * {
   width: 400px;
   border-radius: 1rem;
-  overflow: hidden;
-}
-.profile-img {
-  background-image: url('/assets/me.jpg');
-  margin: 0 1em 1em;
-  width: 400px;
-  border-radius: 1rem;
-  height: 400px;
-  background-size: cover;
-  background-position: center top;
-}
-
-header {
+  margin: 0 0 1rem;
   background-color: #737;
   color: #fff;
 }
-main {
-  font-size: 1.2em;
+.profile-img {
+  max-width: 100%;
+  margin: 0 1rem 1rem;
 }
-h1 .name {
+
+header {
+  padding: 2rem 0 1rem;
+  text-align: center;
+}
+header > * {
+  margin: 0 1.5rem .5em;
+}
+h1 {
 	font-size: 2.2em;
 	font-weight: 300;
   line-height: 1.2em;
-  min-width: 300px;
 }
-h1 .who-dat {
-  margin-top: 1rem;
+
+.logos {
+  margin-bottom: 0.5rem;
+}
+.logos > img {
+  display: inline-block;
+  height: 1.25rem;
+  vertical-align: top;
+  margin: 0 0.5rem;
+}
+.logos > img:last-child {
+  height: 2.5rem;
+  margin-right: 0;
+}
+.who-dat {
   font-size: 1.2rem;
   font-weight: 400;
 }
 
-.big {
+nav {
+  margin: 1.5rem;
+}
+
+strong {
   font-size: 1.2em;
 }
 
@@ -85,54 +89,16 @@ blockquote::after {
   content: '\201d';
   right: -2rem;
 }
-
-.inline-block {
-  display: inline-block;
-}
-/*
-.profile-img:hover {
-  background-im: url('/assets/internet.png');
-}
-*/
-
-footer {
-  background-color: #FEC;
-}
-
-.well {
-  display: inline-block;
-  background-color: #fff;
-  border-radius: .5rem;
-  color: #000;
-}
-
-.inline-logo {
-  border-radius: 0;
-  height: 1em;
-  margin-right: .3em;
-}
-
-.button {
-	background-color: #737;
+nav > a {
+	font-size: 1.1em;
+	background-color: #78D;
 	color: #fff;
 	padding: .2em .4em;
 	border-radius: .2em;
 	text-decoration: none;
-	margin: 0 .2em;
-}
-.button:first-child {
-  margin-left: 0;
+	margin: 0 .2em 0;
 }
 
-.button.contact {
-	font-size: 1.2em;
-	background-color: #78D;
-}
-
-.button:hover {
+nav > a:hover {
 	background-color: #76A;
-}
-
-caption, small {
-	font-size: .75em;
 }
